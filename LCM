@@ -1,0 +1,12 @@
+class LCM {
+    public static void main(String[] args) {
+        int a = 4, b = 6;
+        int gcd = a, tempB = b;
+        while(tempB != 0) {
+            int t = tempB;
+            tempB = gcd % tempB;
+            gcd = t;
+        }
+        System.out.println((a*b)/gcd);
+    }
+}
